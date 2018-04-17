@@ -15,6 +15,9 @@
 		181179E42086348600C408A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 181179E32086348600C408A1 /* main.m */; };
 		181179EE2086348600C408A1 /* YAAppsCommunicationModeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181179ED2086348600C408A1 /* YAAppsCommunicationModeTests.m */; };
 		181179F92086348600C408A1 /* YAAppsCommunicationModeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181179F82086348600C408A1 /* YAAppsCommunicationModeUITests.m */; };
+		18117A0B208640C100C408A1 /* YATableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18117A0A208640C100C408A1 /* YATableViewAdapter.m */; };
+		18117A0E2086422600C408A1 /* UITableView+adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18117A0D2086422600C408A1 /* UITableView+adapter.m */; };
+		18117A112086451A00C408A1 /* CommunicationAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18117A102086451A00C408A1 /* CommunicationAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		181179F42086348600C408A1 /* YAAppsCommunicationModeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YAAppsCommunicationModeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181179F82086348600C408A1 /* YAAppsCommunicationModeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAAppsCommunicationModeUITests.m; sourceTree = "<group>"; };
 		181179FA2086348600C408A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18117A0720863EAE00C408A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		18117A09208640C100C408A1 /* YATableViewAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YATableViewAdapter.h; sourceTree = "<group>"; };
+		18117A0A208640C100C408A1 /* YATableViewAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YATableViewAdapter.m; sourceTree = "<group>"; };
+		18117A0C2086422600C408A1 /* UITableView+adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+adapter.h"; sourceTree = "<group>"; };
+		18117A0D2086422600C408A1 /* UITableView+adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+adapter.m"; sourceTree = "<group>"; };
+		18117A0F2086451A00C408A1 /* CommunicationAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommunicationAdapter.h; sourceTree = "<group>"; };
+		18117A102086451A00C408A1 /* CommunicationAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommunicationAdapter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +111,13 @@
 		181179D32086348600C408A1 /* YAAppsCommunicationMode */ = {
 			isa = PBXGroup;
 			children = (
+				18117A08208640A200C408A1 /* Adapter */,
 				181179D42086348600C408A1 /* AppDelegate.h */,
 				181179D52086348600C408A1 /* AppDelegate.m */,
 				181179D72086348600C408A1 /* ViewController.h */,
 				181179D82086348600C408A1 /* ViewController.m */,
+				18117A0F2086451A00C408A1 /* CommunicationAdapter.h */,
+				18117A102086451A00C408A1 /* CommunicationAdapter.m */,
 				181179DA2086348600C408A1 /* Main.storyboard */,
 				181179DD2086348600C408A1 /* Assets.xcassets */,
 				181179DF2086348600C408A1 /* LaunchScreen.storyboard */,
@@ -130,6 +143,17 @@
 				181179FA2086348600C408A1 /* Info.plist */,
 			);
 			path = YAAppsCommunicationModeUITests;
+			sourceTree = "<group>";
+		};
+		18117A08208640A200C408A1 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				18117A09208640C100C408A1 /* YATableViewAdapter.h */,
+				18117A0A208640C100C408A1 /* YATableViewAdapter.m */,
+				18117A0C2086422600C408A1 /* UITableView+adapter.h */,
+				18117A0D2086422600C408A1 /* UITableView+adapter.m */,
+			);
+			path = Adapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18117A0E2086422600C408A1 /* UITableView+adapter.m in Sources */,
 				181179D92086348600C408A1 /* ViewController.m in Sources */,
+				18117A112086451A00C408A1 /* CommunicationAdapter.m in Sources */,
+				18117A0B208640C100C408A1 /* YATableViewAdapter.m in Sources */,
 				181179E42086348600C408A1 /* main.m in Sources */,
 				181179D62086348600C408A1 /* AppDelegate.m in Sources */,
 			);
@@ -307,6 +334,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				181179DB2086348600C408A1 /* Base */,
+				18117A0720863EAE00C408A1 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
