@@ -431,8 +431,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RSU7N269N5;
+				DEVELOPMENT_TEAM = 2E7NUC5MK3;
 				INFOPLIST_FILE = YAAppsCommunicationMode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lanjiying.YAAppsCommunicationMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,8 +446,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RSU7N269N5;
+				DEVELOPMENT_TEAM = 2E7NUC5MK3;
 				INFOPLIST_FILE = YAAppsCommunicationMode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lanjiying.YAAppsCommunicationMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
