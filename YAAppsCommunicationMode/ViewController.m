@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "UITableView+adapter.h"
 #import "CommunicationAdapter.h"
+#import "YAAppsCommunication.h"
 
 @interface ViewController ()
 
@@ -26,6 +27,7 @@
 {
     [super viewWillAppear:animated];
     [self setupUI];
+    [self deployObjectsBlock];
 }
 - (void)setupUI
 {
@@ -52,10 +54,20 @@
 }
 - (void)deployObjectsBlock
 {
+//    __weak typeof (&*self)wself = self;
     _adapter.didCellSelected = ^(NSIndexPath *indexPath) {
-        
+        switch (indexPath.row) {
+            case 0:{
+                [YAAppsCommunication communicationWithURLScheme];
+            }
+                break;
+                
+            default:
+                break;
+        }
     };
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

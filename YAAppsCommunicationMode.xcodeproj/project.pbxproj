@@ -18,6 +18,8 @@
 		18117A0B208640C100C408A1 /* YATableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18117A0A208640C100C408A1 /* YATableViewAdapter.m */; };
 		18117A0E2086422600C408A1 /* UITableView+adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18117A0D2086422600C408A1 /* UITableView+adapter.m */; };
 		18117A112086451A00C408A1 /* CommunicationAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18117A102086451A00C408A1 /* CommunicationAdapter.m */; };
+		18B74BA920872D140023833B /* YAAppsCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B74BA820872D140023833B /* YAAppsCommunication.m */; };
+		18B74BAC208732000023833B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B74BAB208732000023833B /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		18117A0D2086422600C408A1 /* UITableView+adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+adapter.m"; sourceTree = "<group>"; };
 		18117A0F2086451A00C408A1 /* CommunicationAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommunicationAdapter.h; sourceTree = "<group>"; };
 		18117A102086451A00C408A1 /* CommunicationAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommunicationAdapter.m; sourceTree = "<group>"; };
+		18B74BA720872D140023833B /* YAAppsCommunication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAAppsCommunication.h; sourceTree = "<group>"; };
+		18B74BA820872D140023833B /* YAAppsCommunication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAAppsCommunication.m; sourceTree = "<group>"; };
+		18B74BAB208732000023833B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B74BAC208732000023833B /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +101,7 @@
 				181179EC2086348600C408A1 /* YAAppsCommunicationModeTests */,
 				181179F72086348600C408A1 /* YAAppsCommunicationModeUITests */,
 				181179D22086348600C408A1 /* Products */,
+				18B74BAA208732000023833B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +125,8 @@
 				181179D82086348600C408A1 /* ViewController.m */,
 				18117A0F2086451A00C408A1 /* CommunicationAdapter.h */,
 				18117A102086451A00C408A1 /* CommunicationAdapter.m */,
+				18B74BA720872D140023833B /* YAAppsCommunication.h */,
+				18B74BA820872D140023833B /* YAAppsCommunication.m */,
 				181179DA2086348600C408A1 /* Main.storyboard */,
 				181179DD2086348600C408A1 /* Assets.xcassets */,
 				181179DF2086348600C408A1 /* LaunchScreen.storyboard */,
@@ -154,6 +163,14 @@
 				18117A0D2086422600C408A1 /* UITableView+adapter.m */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		18B74BAA208732000023833B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18B74BAB208732000023833B /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +308,7 @@
 			files = (
 				18117A0E2086422600C408A1 /* UITableView+adapter.m in Sources */,
 				181179D92086348600C408A1 /* ViewController.m in Sources */,
+				18B74BA920872D140023833B /* YAAppsCommunication.m in Sources */,
 				18117A112086451A00C408A1 /* CommunicationAdapter.m in Sources */,
 				18117A0B208640C100C408A1 /* YATableViewAdapter.m in Sources */,
 				181179E42086348600C408A1 /* main.m in Sources */,
@@ -459,7 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2E7NUC5MK3;
+				DEVELOPMENT_TEAM = RSU7N269N5;
 				INFOPLIST_FILE = YAAppsCommunicationMode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -474,7 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2E7NUC5MK3;
+				DEVELOPMENT_TEAM = RSU7N269N5;
 				INFOPLIST_FILE = YAAppsCommunicationMode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:YAAppsCommunicationMode.xcodeproj">
+      location = "group:../../YAAppsCommunicationB/YAAppsCommunicationB.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
