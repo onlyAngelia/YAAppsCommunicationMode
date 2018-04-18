@@ -8,10 +8,11 @@
 
 #import "YAAppsCommunication.h"
 #import <UIKit/UIKit.h>
+#import "YAKeyChain.h"
 
 @implementation YAAppsCommunication
 
-+(void)communicationWithURLScheme
++ (void)communicationWithURLScheme
 {
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"AppsCommunicationTest://?nick:lanjiying&age:18"]]) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"AppsCommunicationTest://?nick:lanjiying&age:18"]];
@@ -19,7 +20,16 @@
         [YAAppsCommunication showAlert:@"no this Apps " message:@"you can build another app on your phone"];
     }
 }
-
++ (void)communicationWithKeyChain
+{
+    NSDictionary *userInfo = @{@"nick":@"lanjiying",@"":@"",@"user_image":[UIImage imageNamed:@"my_information_user"]};
+    if ([YAKeyChain keyChainSaveData:userInfo withIdentifier:@"userinfo"]) {
+        [YAAppsCommunication showAlert:@"save successed" message:@"Congratulations! The data save successfully and you can open another app in order to check the data"];
+    }else{
+        [YAAppsCommunication showAlert:@"save fail" message:@"check your data"];
+    }
+    
+}
 + (void)showAlert:(NSString *)title message:(NSString *)message
 {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];

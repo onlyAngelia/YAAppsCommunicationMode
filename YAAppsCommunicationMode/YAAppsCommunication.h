@@ -11,5 +11,6 @@
 @interface YAAppsCommunication : NSObject
 
 +(void)communicationWithURLScheme;
++ (void)communicationWithKeyChain;
 
 @end

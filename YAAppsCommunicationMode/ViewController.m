@@ -61,7 +61,10 @@
                 [YAAppsCommunication communicationWithURLScheme];
             }
                 break;
-                
+            case 1:{
+                [YAAppsCommunication communicationWithKeyChain];
+            }
+                break;
             default:
                 break;
         }
