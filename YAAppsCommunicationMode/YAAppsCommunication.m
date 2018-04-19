@@ -22,8 +22,10 @@
 }
 + (void)communicationWithKeyChain
 {
-    NSDictionary *userInfo = @{@"nick":@"lanjiying",@"":@"",@"user_image":[UIImage imageNamed:@"my_information_user"]};
+    NSDictionary *userInfo = @{@"nick":@"lanjiying",@"age":@"18",@"user_image":[UIImage imageNamed:@"my_information_user"]};
+
     if ([YAKeyChain keyChainSaveData:userInfo withIdentifier:@"userinfo"]) {
+        NSLog(@"%@",[YAKeyChain keyChainReadData:@"userinfo"]);
         [YAAppsCommunication showAlert:@"save successed" message:@"Congratulations! The data save successfully and you can open another app in order to check the data"];
     }else{
         [YAAppsCommunication showAlert:@"save fail" message:@"check your data"];
