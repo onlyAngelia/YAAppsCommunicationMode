@@ -12,8 +12,11 @@
 @implementation YAKeyChain
 
 +(NSMutableDictionary*) keyChainIdentifier:(NSString*)identifier {
-    NSMutableDictionary * keyChainMutableDictionary = [NSMutableDictionary dictionaryWithObjectsAndKeys:(id)kSecClassGenericPassword,kSecClass,identifier,kSecAttrService,identifier,kSecAttrAccount,kSecAttrAccessibleAfterFirstUnlock,kSecAttrAccessible, nil];
-    return keyChainMutableDictionary;
+    return [@{(__bridge id)kSecClass            : (__bridge id)kSecClassGenericPassword,
+              (__bridge id)kSecAttrService      : identifier,
+              (__bridge id)kSecAttrAccount      : identifier,
+              (__bridge id)kSecAttrAccessible   : (__bridge id)kSecAttrAccessibleAfterFirstUnlock
+              } mutableCopy];
 }
 
 +(BOOL) keyChainSaveData:(id)data withIdentifier:(NSString*)identifier{
@@ -22,7 +25,7 @@
         // delete past data
     SecItemDelete((CFDictionaryRef)saveQueryMutableDictionary);
         // set new data
-    [saveQueryMutableDictionary setObject:[NSKeyedArchiver archivedDataWithRootObject:data] forKey:(id)kSecValueData];
+    [saveQueryMutableDictionary setObject:[NSKeyedArchiver archivedDataWithRootObject:data] forKey:(__bridge id)kSecValueData];
         // add data into keychain
     OSStatus saveState = SecItemAdd((CFDictionaryRef)saveQueryMutableDictionary, nil);
         // free object
