@@ -19,19 +19,6 @@
 		18117A0E2086422600C408A1 /* UITableView+adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18117A0D2086422600C408A1 /* UITableView+adapter.m */; };
 		18117A112086451A00C408A1 /* CommunicationAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18117A102086451A00C408A1 /* CommunicationAdapter.m */; };
 		1833090120879180005AB55E /* YAKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 183308FF20879180005AB55E /* YAKeyChain.m */; };
-		183309BA208B9CE3005AB55E /* YAAppsCommunicationBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833099B208B9CE3005AB55E /* YAAppsCommunicationBTests.m */; };
-		183309BB208B9CE3005AB55E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1833099C208B9CE3005AB55E /* Info.plist */; };
-		183309BC208B9CE3005AB55E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183309A0208B9CE3005AB55E /* Assets.xcassets */; };
-		183309BD208B9CE3005AB55E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183309A1208B9CE3005AB55E /* ViewController.m */; };
-		183309BE208B9CE3005AB55E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183309A2208B9CE3005AB55E /* LaunchScreen.storyboard */; };
-		183309BF208B9CE3005AB55E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183309A4208B9CE3005AB55E /* Main.storyboard */; };
-		183309C0208B9CE3005AB55E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183309A8208B9CE3005AB55E /* main.m */; };
-		183309C1208B9CE3005AB55E /* YAKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 183309A9208B9CE3005AB55E /* YAKeyChain.m */; };
-		183309C2208B9CE3005AB55E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183309AA208B9CE3005AB55E /* AppDelegate.m */; };
-		183309C3208B9CE3005AB55E /* YACheckData.m in Sources */ = {isa = PBXBuildFile; fileRef = 183309AB208B9CE3005AB55E /* YACheckData.m */; };
-		183309C4208B9CE3005AB55E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183309AC208B9CE3005AB55E /* Info.plist */; };
-		183309C5208B9CE3005AB55E /* YAAppsCommunicationBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183309AF208B9CE3005AB55E /* YAAppsCommunicationBUITests.m */; };
-		183309C6208B9CE3005AB55E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183309B0208B9CE3005AB55E /* Info.plist */; };
 		18B74BA920872D140023833B /* YAAppsCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B74BA820872D140023833B /* YAAppsCommunication.m */; };
 		18B74BAC208732000023833B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B74BAB208732000023833B /* Security.framework */; };
 /* End PBXBuildFile section */
@@ -50,27 +37,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 181179D02086348600C408A1;
 			remoteInfo = YAAppsCommunicationMode;
-		};
-		183309B4208B9CE3005AB55E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18330997208B9CE2005AB55E /* YAAppsCommunicationB.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18117A1B2086D97B00C408A1;
-			remoteInfo = YAAppsCommunicationB;
-		};
-		183309B6208B9CE3005AB55E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18330997208B9CE2005AB55E /* YAAppsCommunicationB.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18117A332086D97B00C408A1;
-			remoteInfo = YAAppsCommunicationBTests;
-		};
-		183309B8208B9CE3005AB55E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18330997208B9CE2005AB55E /* YAAppsCommunicationB.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18117A3E2086D97C00C408A1;
-			remoteInfo = YAAppsCommunicationBUITests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -101,25 +67,6 @@
 		183308FF20879180005AB55E /* YAKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAKeyChain.m; sourceTree = "<group>"; };
 		1833090020879180005AB55E /* YAKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAKeyChain.h; sourceTree = "<group>"; };
 		1833093020886001005AB55E /* YAAppsCommunicationMode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YAAppsCommunicationMode.entitlements; sourceTree = "<group>"; };
-		18330997208B9CE2005AB55E /* YAAppsCommunicationB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = YAAppsCommunicationB.xcodeproj; sourceTree = "<group>"; };
-		1833099B208B9CE3005AB55E /* YAAppsCommunicationBTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAppsCommunicationBTests.m; sourceTree = "<group>"; };
-		1833099C208B9CE3005AB55E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1833099E208B9CE3005AB55E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1833099F208B9CE3005AB55E /* YAKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAKeyChain.h; sourceTree = "<group>"; };
-		183309A0208B9CE3005AB55E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		183309A1208B9CE3005AB55E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		183309A3208B9CE3005AB55E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		183309A5208B9CE3005AB55E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		183309A6208B9CE3005AB55E /* YACheckData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YACheckData.h; sourceTree = "<group>"; };
-		183309A7208B9CE3005AB55E /* YAAppsCommunicationB.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = YAAppsCommunicationB.entitlements; sourceTree = "<group>"; };
-		183309A8208B9CE3005AB55E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		183309A9208B9CE3005AB55E /* YAKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAKeyChain.m; sourceTree = "<group>"; };
-		183309AA208B9CE3005AB55E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		183309AB208B9CE3005AB55E /* YACheckData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YACheckData.m; sourceTree = "<group>"; };
-		183309AC208B9CE3005AB55E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		183309AD208B9CE3005AB55E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		183309AF208B9CE3005AB55E /* YAAppsCommunicationBUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAppsCommunicationBUITests.m; sourceTree = "<group>"; };
-		183309B0208B9CE3005AB55E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B74BA720872D140023833B /* YAAppsCommunication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAAppsCommunication.h; sourceTree = "<group>"; };
 		18B74BA820872D140023833B /* YAAppsCommunication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAAppsCommunication.m; sourceTree = "<group>"; };
 		18B74BAB208732000023833B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -154,7 +101,6 @@
 		181179C82086348600C408A1 = {
 			isa = PBXGroup;
 			children = (
-				18330996208B9CE2005AB55E /* YAAppsCommunicationB */,
 				181179D32086348600C408A1 /* YAAppsCommunicationMode */,
 				181179EC2086348600C408A1 /* YAAppsCommunicationModeTests */,
 				181179F72086348600C408A1 /* YAAppsCommunicationModeUITests */,
@@ -224,66 +170,6 @@
 				18117A0D2086422600C408A1 /* UITableView+adapter.m */,
 			);
 			path = Adapter;
-			sourceTree = "<group>";
-		};
-		18330996208B9CE2005AB55E /* YAAppsCommunicationB */ = {
-			isa = PBXGroup;
-			children = (
-				18330997208B9CE2005AB55E /* YAAppsCommunicationB.xcodeproj */,
-				1833099A208B9CE3005AB55E /* YAAppsCommunicationBTests */,
-				1833099D208B9CE3005AB55E /* YAAppsCommunicationB */,
-				183309AE208B9CE3005AB55E /* YAAppsCommunicationBUITests */,
-			);
-			path = YAAppsCommunicationB;
-			sourceTree = "<group>";
-		};
-		18330998208B9CE2005AB55E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				183309B5208B9CE3005AB55E /* YAAppsCommunicationB.app */,
-				183309B7208B9CE3005AB55E /* YAAppsCommunicationBTests.xctest */,
-				183309B9208B9CE3005AB55E /* YAAppsCommunicationBUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1833099A208B9CE3005AB55E /* YAAppsCommunicationBTests */ = {
-			isa = PBXGroup;
-			children = (
-				1833099B208B9CE3005AB55E /* YAAppsCommunicationBTests.m */,
-				1833099C208B9CE3005AB55E /* Info.plist */,
-			);
-			path = YAAppsCommunicationBTests;
-			sourceTree = "<group>";
-		};
-		1833099D208B9CE3005AB55E /* YAAppsCommunicationB */ = {
-			isa = PBXGroup;
-			children = (
-				1833099E208B9CE3005AB55E /* AppDelegate.h */,
-				1833099F208B9CE3005AB55E /* YAKeyChain.h */,
-				183309A0208B9CE3005AB55E /* Assets.xcassets */,
-				183309A1208B9CE3005AB55E /* ViewController.m */,
-				183309A2208B9CE3005AB55E /* LaunchScreen.storyboard */,
-				183309A4208B9CE3005AB55E /* Main.storyboard */,
-				183309A6208B9CE3005AB55E /* YACheckData.h */,
-				183309A7208B9CE3005AB55E /* YAAppsCommunicationB.entitlements */,
-				183309A8208B9CE3005AB55E /* main.m */,
-				183309A9208B9CE3005AB55E /* YAKeyChain.m */,
-				183309AA208B9CE3005AB55E /* AppDelegate.m */,
-				183309AB208B9CE3005AB55E /* YACheckData.m */,
-				183309AC208B9CE3005AB55E /* Info.plist */,
-				183309AD208B9CE3005AB55E /* ViewController.h */,
-			);
-			path = YAAppsCommunicationB;
-			sourceTree = "<group>";
-		};
-		183309AE208B9CE3005AB55E /* YAAppsCommunicationBUITests */ = {
-			isa = PBXGroup;
-			children = (
-				183309AF208B9CE3005AB55E /* YAAppsCommunicationBUITests.m */,
-				183309B0208B9CE3005AB55E /* Info.plist */,
-			);
-			path = YAAppsCommunicationBUITests;
 			sourceTree = "<group>";
 		};
 		18B74BAA208732000023833B /* Frameworks */ = {
@@ -391,12 +277,6 @@
 			mainGroup = 181179C82086348600C408A1;
 			productRefGroup = 181179D22086348600C408A1 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 18330998208B9CE2005AB55E /* Products */;
-					ProjectRef = 18330997208B9CE2005AB55E /* YAAppsCommunicationB.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				181179D02086348600C408A1 /* YAAppsCommunicationMode */,
@@ -406,44 +286,14 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		183309B5208B9CE3005AB55E /* YAAppsCommunicationB.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = YAAppsCommunicationB.app;
-			remoteRef = 183309B4208B9CE3005AB55E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		183309B7208B9CE3005AB55E /* YAAppsCommunicationBTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = YAAppsCommunicationBTests.xctest;
-			remoteRef = 183309B6208B9CE3005AB55E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		183309B9208B9CE3005AB55E /* YAAppsCommunicationBUITests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = YAAppsCommunicationBUITests.xctest;
-			remoteRef = 183309B8208B9CE3005AB55E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		181179CF2086348600C408A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183309C4208B9CE3005AB55E /* Info.plist in Resources */,
-				183309BF208B9CE3005AB55E /* Main.storyboard in Resources */,
-				183309C6208B9CE3005AB55E /* Info.plist in Resources */,
-				183309BB208B9CE3005AB55E /* Info.plist in Resources */,
 				181179E12086348600C408A1 /* LaunchScreen.storyboard in Resources */,
 				181179DE2086348600C408A1 /* Assets.xcassets in Resources */,
-				183309BE208B9CE3005AB55E /* LaunchScreen.storyboard in Resources */,
 				181179DC2086348600C408A1 /* Main.storyboard in Resources */,
-				183309BC208B9CE3005AB55E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,17 +321,10 @@
 				18117A0E2086422600C408A1 /* UITableView+adapter.m in Sources */,
 				181179D92086348600C408A1 /* ViewController.m in Sources */,
 				18B74BA920872D140023833B /* YAAppsCommunication.m in Sources */,
-				183309BA208B9CE3005AB55E /* YAAppsCommunicationBTests.m in Sources */,
-				183309BD208B9CE3005AB55E /* ViewController.m in Sources */,
-				183309C1208B9CE3005AB55E /* YAKeyChain.m in Sources */,
 				18117A112086451A00C408A1 /* CommunicationAdapter.m in Sources */,
-				183309C2208B9CE3005AB55E /* AppDelegate.m in Sources */,
 				18117A0B208640C100C408A1 /* YATableViewAdapter.m in Sources */,
 				1833090120879180005AB55E /* YAKeyChain.m in Sources */,
-				183309C3208B9CE3005AB55E /* YACheckData.m in Sources */,
 				181179E42086348600C408A1 /* main.m in Sources */,
-				183309C0208B9CE3005AB55E /* main.m in Sources */,
-				183309C5208B9CE3005AB55E /* YAAppsCommunicationBUITests.m in Sources */,
 				181179D62086348600C408A1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,22 +376,6 @@
 				181179E02086348600C408A1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		183309A2208B9CE3005AB55E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				183309A3208B9CE3005AB55E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		183309A4208B9CE3005AB55E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				183309A5208B9CE3005AB55E /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
