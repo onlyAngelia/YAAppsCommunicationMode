@@ -21,6 +21,10 @@
 - (IBAction)checkKeyChainData:(id)sender {
     [YACheckData checkKeyChainData];
 }
+- (IBAction)checkPasteboard:(id)sender {
+
+    [YACheckData checkPasteboard];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

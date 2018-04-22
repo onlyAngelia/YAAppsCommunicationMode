@@ -19,6 +19,7 @@
 		18117A0E2086422600C408A1 /* UITableView+adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18117A0D2086422600C408A1 /* UITableView+adapter.m */; };
 		18117A112086451A00C408A1 /* CommunicationAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18117A102086451A00C408A1 /* CommunicationAdapter.m */; };
 		1833090120879180005AB55E /* YAKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 183308FF20879180005AB55E /* YAKeyChain.m */; };
+		183309C9208CE2B4005AB55E /* mine_wxpay@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 183309C8208CE2B4005AB55E /* mine_wxpay@2x.jpeg */; };
 		18B74BA920872D140023833B /* YAAppsCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B74BA820872D140023833B /* YAAppsCommunication.m */; };
 		18B74BAC208732000023833B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B74BAB208732000023833B /* Security.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		183308FF20879180005AB55E /* YAKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAKeyChain.m; sourceTree = "<group>"; };
 		1833090020879180005AB55E /* YAKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAKeyChain.h; sourceTree = "<group>"; };
 		1833093020886001005AB55E /* YAAppsCommunicationMode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YAAppsCommunicationMode.entitlements; sourceTree = "<group>"; };
+		183309C8208CE2B4005AB55E /* mine_wxpay@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mine_wxpay@2x.jpeg"; sourceTree = "<group>"; };
 		18B74BA720872D140023833B /* YAAppsCommunication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAAppsCommunication.h; sourceTree = "<group>"; };
 		18B74BA820872D140023833B /* YAAppsCommunication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAAppsCommunication.m; sourceTree = "<group>"; };
 		18B74BAB208732000023833B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -122,6 +124,7 @@
 		181179D32086348600C408A1 /* YAAppsCommunicationMode */ = {
 			isa = PBXGroup;
 			children = (
+				183309C8208CE2B4005AB55E /* mine_wxpay@2x.jpeg */,
 				1833093020886001005AB55E /* YAAppsCommunicationMode.entitlements */,
 				1833090020879180005AB55E /* YAKeyChain.h */,
 				183308FF20879180005AB55E /* YAKeyChain.m */,
@@ -130,10 +133,10 @@
 				181179D52086348600C408A1 /* AppDelegate.m */,
 				181179D72086348600C408A1 /* ViewController.h */,
 				181179D82086348600C408A1 /* ViewController.m */,
-				18117A0F2086451A00C408A1 /* CommunicationAdapter.h */,
-				18117A102086451A00C408A1 /* CommunicationAdapter.m */,
 				18B74BA720872D140023833B /* YAAppsCommunication.h */,
 				18B74BA820872D140023833B /* YAAppsCommunication.m */,
+				18117A0F2086451A00C408A1 /* CommunicationAdapter.h */,
+				18117A102086451A00C408A1 /* CommunicationAdapter.m */,
 				181179DA2086348600C408A1 /* Main.storyboard */,
 				181179DD2086348600C408A1 /* Assets.xcassets */,
 				181179DF2086348600C408A1 /* LaunchScreen.storyboard */,
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				181179E12086348600C408A1 /* LaunchScreen.storyboard in Resources */,
+				183309C9208CE2B4005AB55E /* mine_wxpay@2x.jpeg in Resources */,
 				181179DE2086348600C408A1 /* Assets.xcassets in Resources */,
 				181179DC2086348600C408A1 /* Main.storyboard in Resources */,
 			);

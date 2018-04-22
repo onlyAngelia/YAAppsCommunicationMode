@@ -11,6 +11,7 @@
 @interface YACheckData : NSObject
 
 + (void)checkKeyChainData;
++ (void)checkPasteboard;
 +(void)showMessageAlert:(NSObject *)title message:(NSObject *)message;
 
 @end

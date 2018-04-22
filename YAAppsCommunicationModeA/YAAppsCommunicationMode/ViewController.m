@@ -65,6 +65,10 @@
                 [YAAppsCommunication communicationWithKeyChain];
             }
                 break;
+            case 2:{
+                [YAAppsCommunication communicationWithPasteboard];
+            }
+                break;
             default:
                 break;
         }

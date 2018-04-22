@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o91-H0-uH6">
-                                <rect key="frame" x="115.5" y="60" width="144" height="40"/>
+                                <rect key="frame" x="116" y="60" width="144" height="40"/>
                                 <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Omi-Ih-p9e"/>
@@ -29,10 +29,22 @@
                                     <action selector="checkKeyChainData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fp3-Zf-tbg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Niv-3L-LfU">
+                                <rect key="frame" x="115" y="140" width="144" height="40"/>
+                                <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="check Pasteboard"/>
+                                <connections>
+                                    <action selector="checkPasteboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ya4-jk-lmX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Niv-3L-LfU" firstAttribute="width" secondItem="o91-H0-uH6" secondAttribute="width" id="1wo-zq-ba1"/>
+                            <constraint firstItem="Niv-3L-LfU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9p4-0P-4VU"/>
+                            <constraint firstItem="Niv-3L-LfU" firstAttribute="top" secondItem="o91-H0-uH6" secondAttribute="bottom" constant="40" id="MvF-wJ-xKt"/>
                             <constraint firstItem="o91-H0-uH6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="YAi-ai-mZU"/>
+                            <constraint firstItem="Niv-3L-LfU" firstAttribute="height" secondItem="o91-H0-uH6" secondAttribute="height" id="asw-UX-JZ0"/>
                             <constraint firstItem="o91-H0-uH6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ccA-1i-Agf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

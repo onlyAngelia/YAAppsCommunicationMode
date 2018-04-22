@@ -12,5 +12,6 @@
 
 +(void)communicationWithURLScheme;
 + (void)communicationWithKeyChain;
++ (void)communicationWithPasteboard;
 
 @end

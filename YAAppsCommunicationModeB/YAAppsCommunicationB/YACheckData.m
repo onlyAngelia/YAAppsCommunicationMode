@@ -21,23 +21,34 @@
         [YACheckData showMessageAlert:@"error" message:@"keyChain no data"];
     }
 }
-
++ (void)checkPasteboard
+{
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+    if (pasteboard.image) {
+        [YACheckData showKeyChainData:@[@"readed the image\n\n\n\n\n\n\n",@"http://lanjiying.allenqin.com",pasteboard.image]];
+    }else{
+        [YACheckData showMessageAlert:@"read failed" message:@"To be sorry, it's failur to read image from pasteboard"];
+    }
+    
+}
 + (void)showKeyChainData:(NSArray *)array
 {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[array objectAtIndex:0] message:[array objectAtIndex:1] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[array objectAtIndex:0] message:[array objectAtIndex:1] preferredStyle: UIAlertControllerStyleActionSheet];
     UIImage *userImage = (UIImage *)[array objectAtIndex:2];
     UIImageView *userInfoImageView = [[UIImageView alloc] initWithImage:userImage];
-    userInfoImageView.frame = CGRectMake(0, 0, userImage.size.width, userImage.size.height);
+    userInfoImageView.frame = CGRectMake(10,10,alertController.view.bounds.size.width - 40,140);
     userInfoImageView.center = alertController.view.center;
-    [alertController.view addSubview:userInfoImageView];
+//    [alertController.view addSubview:userInfoImageView];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
     [alertController addAction:cancelAction];
     UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+    
     [keyWindow.rootViewController presentViewController:alertController animated:YES completion:^{
         
     }];
+    NSLog(@"%@",alertController.view.subviews);
 }
 
 +(void)showMessageAlert:(NSObject *)title message:(NSObject *)message
