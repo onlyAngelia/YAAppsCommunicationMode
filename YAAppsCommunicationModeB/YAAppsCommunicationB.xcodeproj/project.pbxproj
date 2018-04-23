@@ -17,6 +17,10 @@
 		18117A432086D97C00C408A1 /* YAAppsCommunicationBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18117A422086D97C00C408A1 /* YAAppsCommunicationBUITests.m */; };
 		18330912208799C5005AB55E /* YAKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 18330910208799C4005AB55E /* YAKeyChain.m */; };
 		1833091520879A7E005AB55E /* YACheckData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833091420879A7E005AB55E /* YACheckData.m */; };
+		1895EEE3208E24D100E24015 /* customicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1895EEE0208E24D100E24015 /* customicon@2x.png */; };
+		1895EEE4208E24D100E24015 /* customicon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1895EEE1208E24D100E24015 /* customicon@3x.png */; };
+		1895EEE5208E24D100E24015 /* customicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1895EEE2208E24D100E24015 /* customicon.png */; };
+		18AB0849208DC58400CD79B3 /* mine_wxpay@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18AB0846208DC58400CD79B3 /* mine_wxpay@2x.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		1833091320879A7E005AB55E /* YACheckData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YACheckData.h; sourceTree = "<group>"; };
 		1833091420879A7E005AB55E /* YACheckData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YACheckData.m; sourceTree = "<group>"; };
 		18330995208B8156005AB55E /* YAAppsCommunicationB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YAAppsCommunicationB.entitlements; sourceTree = "<group>"; };
+		1895EEE0208E24D100E24015 /* customicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customicon@2x.png"; sourceTree = "<group>"; };
+		1895EEE1208E24D100E24015 /* customicon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customicon@3x.png"; sourceTree = "<group>"; };
+		1895EEE2208E24D100E24015 /* customicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customicon.png; sourceTree = "<group>"; };
+		18AB0846208DC58400CD79B3 /* mine_wxpay@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mine_wxpay@2x.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 		18117A1D2086D97B00C408A1 /* YAAppsCommunicationB */ = {
 			isa = PBXGroup;
 			children = (
+				18AB0844208DC58400CD79B3 /* images */,
 				18330995208B8156005AB55E /* YAAppsCommunicationB.entitlements */,
 				18117A1E2086D97B00C408A1 /* AppDelegate.h */,
 				18117A1F2086D97B00C408A1 /* AppDelegate.m */,
@@ -142,6 +151,17 @@
 				18117A442086D97C00C408A1 /* Info.plist */,
 			);
 			path = YAAppsCommunicationBUITests;
+			sourceTree = "<group>";
+		};
+		18AB0844208DC58400CD79B3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1895EEE2208E24D100E24015 /* customicon.png */,
+				1895EEE0208E24D100E24015 /* customicon@2x.png */,
+				1895EEE1208E24D100E24015 /* customicon@3x.png */,
+				18AB0846208DC58400CD79B3 /* mine_wxpay@2x.jpeg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +275,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1895EEE3208E24D100E24015 /* customicon@2x.png in Resources */,
+				18AB0849208DC58400CD79B3 /* mine_wxpay@2x.jpeg in Resources */,
 				18117A2B2086D97B00C408A1 /* LaunchScreen.storyboard in Resources */,
+				1895EEE4208E24D100E24015 /* customicon@3x.png in Resources */,
 				18117A282086D97B00C408A1 /* Assets.xcassets in Resources */,
 				18117A262086D97B00C408A1 /* Main.storyboard in Resources */,
+				1895EEE5208E24D100E24015 /* customicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +485,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lanjiying.YAAppsCommunicationB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -477,7 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lanjiying.YAAppsCommunicationB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
