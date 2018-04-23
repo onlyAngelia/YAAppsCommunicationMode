@@ -36,15 +36,14 @@
 {
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
 
-    
-    UIImage *pasteImage = [UIImage imageWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"mine_wxpay@2x.jpeg" ofType:@""]]];
+//    UIImage *pasteImage = [UIImage imageWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"mine_wxpay@2x.jpeg" ofType:@""]]];
 //    [pasteboard addItems:@[@{@"type":@"lanjiying",@"paste.string":@"the open url is http://lanjiying.allenqin.com",@"paste.url":@"http://lanjiying.allenqin.com",@"paste.image":pasteImage}]];
     
     // the below found you can only save one
     //    [pasteboard setString:@"the open url is http://lanjiying.allenqin.com"];
-//    [pasteboard setURL:[NSURL URLWithString:@"http://lanjiying.allenqin.com"]];
-    [pasteboard setImage:pasteImage];
-    if (pasteboard.image) {
+    // [pasteboard setImage:pasteImage];
+     [pasteboard setURL:[NSURL URLWithString:@"http://lanjiying.allenqin.com"]];
+    if (pasteboard.URL) {
        [YAAppsCommunication showAlert:@"save successfully" message:@"the data has saved，you can also save other objects such as data、items、images.They you can open anothe app check out the string now"];
     }else{
        [YAAppsCommunication showAlert:@"save failed" message:@"the data save failed,you can confirm that the data is right"];

@@ -24,8 +24,8 @@
 + (void)checkPasteboard
 {
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    if (pasteboard.image) {
-        [YACheckData showKeyChainData:@[@"readed the image\n\n\n\n\n\n\n",@"http://lanjiying.allenqin.com",pasteboard.image]];
+    if (pasteboard.URL) {
+        [YACheckData showMessageAlert:@"read successfully" message:pasteboard.URL];
     }else{
         [YACheckData showMessageAlert:@"read failed" message:@"To be sorry, it's failur to read image from pasteboard"];
     }
