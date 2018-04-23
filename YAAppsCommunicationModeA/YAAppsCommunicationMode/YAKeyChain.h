@@ -12,7 +12,7 @@
 
 +(id) keyChainReadData:(NSString*)identifier ;
 +(BOOL) keyChainSaveData:(id)data withIdentifier:(NSString*)identifier ;
-+(BOOL)keyChainUpdata:(id)data withIdentifier:(NSString*)identifier ;
++(BOOL) keyChainUpdata:(id)data withIdentifier:(NSString*)identifier ;
 +(void) keyChainDelete:(NSString*)identifier ;
 
 @end

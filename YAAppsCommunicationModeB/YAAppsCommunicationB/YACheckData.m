@@ -27,9 +27,8 @@
     if (pasteboard.URL) {
         [YACheckData showMessageAlert:@"read successfully" message:pasteboard.URL];
     }else{
-        [YACheckData showMessageAlert:@"read failed" message:@"To be sorry, it's failur to read image from pasteboard"];
+        [YACheckData showMessageAlert:@"read failed" message:@"so sorry, it's failur to read url from pasteboard, please sure there is a url on pasteboard"];
     }
-    
 }
 + (void)showKeyChainData:(NSArray *)array
 {

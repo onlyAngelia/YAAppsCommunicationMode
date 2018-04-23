@@ -13,5 +13,7 @@
 +(void)communicationWithURLScheme;
 + (void)communicationWithKeyChain;
 + (void)communicationWithPasteboard;
++ (void)communicationWithActivityViewController;
++ (void)communicationWithDocumentInteractionController;
 
 @end

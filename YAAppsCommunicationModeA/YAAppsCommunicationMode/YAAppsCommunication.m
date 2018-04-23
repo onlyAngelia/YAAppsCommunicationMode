@@ -9,6 +9,7 @@
 #import "YAAppsCommunication.h"
 #import <UIKit/UIKit.h>
 #import "YAKeyChain.h"
+#import "YAActivity.h"
 
 @implementation YAAppsCommunication
 
@@ -44,6 +45,17 @@
 }
 + (void)communicationWithActivityViewController
 {
+    
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"mine_wxpay@2x" ofType:@"jpeg"]]];
+    NSArray *shareArray = @[image];
+    NSArray *activitys = @[[[YAActivity alloc]init]];
+    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:shareArray applicationActivities:activitys];
+    activityController.excludedActivityTypes = @[UIActivityTypePrint,UIActivityTypeSaveToCameraRoll,UIActivityTypeAddToReadingList];
+    activityController.completionWithItemsHandler = ^(UIActivityType  _Nullable activityType, BOOL completed, NSArray * _Nullable returnedItems, NSError * _Nullable activityError) {
+    };
+    [[[UIApplication sharedApplication]keyWindow].rootViewController presentViewController:activityController animated:YES completion:^{
+        
+    }];
     
 }
 + (void)showAlert:(NSString *)title message:(NSString *)message
