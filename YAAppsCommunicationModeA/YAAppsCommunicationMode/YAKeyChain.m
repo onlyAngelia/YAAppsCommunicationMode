@@ -22,6 +22,7 @@
 +(BOOL) keyChainSaveData:(id)data withIdentifier:(NSString*)identifier{
         // get the datas condition
     NSMutableDictionary * saveQueryMutableDictionary = [self keyChainIdentifier:identifier];
+    [saveQueryMutableDictionary setObject:@"27974A4CKG.YAAppsCommunications" forKey:(id)kSecAttrAccessGroup];
         // delete past data
     SecItemDelete((CFDictionaryRef)saveQueryMutableDictionary);
         // set new data
