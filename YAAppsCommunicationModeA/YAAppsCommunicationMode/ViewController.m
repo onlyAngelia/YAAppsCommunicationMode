@@ -15,6 +15,7 @@
 
 @property(nonatomic, strong)UITableView *tableView;
 @property(nonatomic, strong)CommunicationAdapter *adapter;
+@property(nonatomic, strong)UIDocumentInteractionController *documentInteractionController;
 
 @end
 
@@ -85,9 +86,38 @@
 
 -(void)communicationWithDocumentInteractionController
 {
-    UIDocumentInteractionController *documentIC = [UIDocumentInteractionController interactionControllerWithURL:[[NSBundle mainBundle]URLForResource:@"mine_wxpay@2x" withExtension:@"jpeg"]];
-    documentIC.delegate = self;
-    [documentIC presentOptionsMenuFromRect:self.view.bounds inView:self.view animated:YES];
+    [[self documentInteractionController] presentOptionsMenuFromRect:self.view.bounds inView:self.view animated:YES];
+}
+- (UIDocumentInteractionController *)documentInteractionController
+{
+    if (!_documentInteractionController) {
+        _documentInteractionController = [UIDocumentInteractionController interactionControllerWithURL:[[NSBundle mainBundle]URLForResource:@"mine_wxpay@2x" withExtension:@"jpeg"]];
+        _documentInteractionController.delegate = self;
+//        _documentInteractionController.URL
+        _documentInteractionController.UTI = @"public.image";
+    }
+    return _documentInteractionController;
+}
+#pragma mark- DocumentDelegate
+- (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller
+{
+    return self;
+}
+- (UIView *)documentInteractionControllerViewForPreview:(UIDocumentInteractionController *)controller
+{
+    return self.view;
+}
+- (void)documentInteractionController:(UIDocumentInteractionController *)controller willBeginSendingToApplication:(nullable NSString *)application
+{
+    NSLog(@"%@ ----%@",application,controller.URL);
+}
+- (void)documentInteractionController:(UIDocumentInteractionController *)controller didEndSendingToApplication:(NSString *)application
+{
+//    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+//    NSString *urlString = [NSString stringWithFormat:@"%@",controller.URL];
+//    NSArray *componentArray = [urlString componentsSeparatedByString:@"/"];
+//    NSString *finalString = [NSString stringWithFormat:@"file:///private%@/Inbox/%@",path,[componentArray lastObject]];
+//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:finalString]];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

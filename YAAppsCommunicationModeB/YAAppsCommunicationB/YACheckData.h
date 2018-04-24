@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface YACheckData : NSObject
 
 + (void)checkKeyChainData;
 + (void)checkPasteboard;
++ (void)cheakDocumentsData:(NSDictionary *)application;
+
 +(void)showMessageAlert:(NSObject *)title message:(NSObject *)message;
 
 @end

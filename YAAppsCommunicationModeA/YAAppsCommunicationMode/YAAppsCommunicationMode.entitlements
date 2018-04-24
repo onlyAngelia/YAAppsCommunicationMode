@@ -5,7 +5,7 @@
 	<key>keychain-access-groups</key>
 	<array>
 		<string>$(AppIdentifierPrefix)com.lanjiying.YAAppsCommunicationMode</string>
-		<string>$(AppIdentifierPrefix)com.lanjiying.YAAppsCommunicationB</string>
+		<string>$(AppIdentifierPrefix)com.lanjiying.YAAppsCommunications</string>
 	</array>
 </dict>
 </plist>

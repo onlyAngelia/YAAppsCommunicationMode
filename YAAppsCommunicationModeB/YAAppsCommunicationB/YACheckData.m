@@ -30,6 +30,17 @@
         [YACheckData showMessageAlert:@"read failed" message:@"so sorry, it's failur to read url from pasteboard, please sure there is a url on pasteboard"];
     }
 }
++ (void)cheakDocumentsData:(NSDictionary *)application
+{
+    if (application) {
+        NSString *pathString = [NSString stringWithFormat:@"\n发送请求的应用程序的 Bundle ID：%@\n\n文件的NSURL：%@\n\n文件相关的属性列表对象：%@",
+                         application[UIApplicationLaunchOptionsSourceApplicationKey],
+                             application[UIApplicationLaunchOptionsURLKey],
+                         application[UIApplicationLaunchOptionsSourceApplicationKey]];
+        [YACheckData showMessageAlert:@"" message:pathString];
+    }
+}
+
 + (void)showKeyChainData:(NSArray *)array
 {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[array objectAtIndex:0] message:[array objectAtIndex:1] preferredStyle: UIAlertControllerStyleActionSheet];
