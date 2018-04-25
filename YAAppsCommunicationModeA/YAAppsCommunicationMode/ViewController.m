@@ -113,11 +113,11 @@
 }
 - (void)documentInteractionController:(UIDocumentInteractionController *)controller didEndSendingToApplication:(NSString *)application
 {
-//    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-//    NSString *urlString = [NSString stringWithFormat:@"%@",controller.URL];
-//    NSArray *componentArray = [urlString componentsSeparatedByString:@"/"];
-//    NSString *finalString = [NSString stringWithFormat:@"file:///private%@/Inbox/%@",path,[componentArray lastObject]];
-//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:finalString]];
+    NSString *urlString = [NSString stringWithFormat:@"%@",controller.URL];
+    NSArray *componentArray = [urlString componentsSeparatedByString:@"/"];
+    NSString *finalString = [NSString stringWithFormat:@"file:///private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/%@",[componentArray lastObject]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:finalString]];
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
