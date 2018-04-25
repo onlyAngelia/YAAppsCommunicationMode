@@ -20,6 +20,7 @@
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>public.image</string>
+				<string>public.item</string>
 			</array>
 		</dict>
 	</array>

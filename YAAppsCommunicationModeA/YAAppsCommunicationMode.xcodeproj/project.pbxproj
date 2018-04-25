@@ -22,6 +22,9 @@
 		1850009A208DC47E00BAEE8E /* mine_wxpay@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18500099208DC47E00BAEE8E /* mine_wxpay@2x.jpeg */; };
 		1895EEDA208E165300E24015 /* YAActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1895EED9208E165300E24015 /* YAActivity.m */; };
 		1895EEDC208E1A8300E24015 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1895EEDB208E1A8300E24015 /* icon@2x.png */; };
+		1895EEEE2090CD7A00E24015 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1895EEED2090CD7A00E24015 /* ShareViewController.m */; };
+		1895EEF12090CD7A00E24015 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1895EEEF2090CD7A00E24015 /* MainInterface.storyboard */; };
+		1895EEF52090CD7A00E24015 /* YAImageShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1895EEEA2090CD7900E24015 /* YAImageShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		18B74BA920872D140023833B /* YAAppsCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B74BA820872D140023833B /* YAAppsCommunication.m */; };
 		18B74BAC208732000023833B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B74BAB208732000023833B /* Security.framework */; };
 /* End PBXBuildFile section */
@@ -41,7 +44,28 @@
 			remoteGlobalIDString = 181179D02086348600C408A1;
 			remoteInfo = YAAppsCommunicationMode;
 		};
+		1895EEF32090CD7A00E24015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 181179C92086348600C408A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1895EEE92090CD7900E24015;
+			remoteInfo = YAImageShare;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1895EEF92090CD7A00E24015 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1895EEF52090CD7A00E24015 /* YAImageShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		181179D12086348600C408A1 /* YAAppsCommunicationMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YAAppsCommunicationMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +98,11 @@
 		1895EED8208E165300E24015 /* YAActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAActivity.h; sourceTree = "<group>"; };
 		1895EED9208E165300E24015 /* YAActivity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAActivity.m; sourceTree = "<group>"; };
 		1895EEDB208E1A8300E24015 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		1895EEEA2090CD7900E24015 /* YAImageShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YAImageShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1895EEEC2090CD7A00E24015 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		1895EEED2090CD7A00E24015 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		1895EEF02090CD7A00E24015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1895EEF22090CD7A00E24015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B74BA720872D140023833B /* YAAppsCommunication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAAppsCommunication.h; sourceTree = "<group>"; };
 		18B74BA820872D140023833B /* YAAppsCommunication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAAppsCommunication.m; sourceTree = "<group>"; };
 		18B74BAB208732000023833B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -102,6 +131,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1895EEE72090CD7900E24015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,6 +147,7 @@
 				181179D32086348600C408A1 /* YAAppsCommunicationMode */,
 				181179EC2086348600C408A1 /* YAAppsCommunicationModeTests */,
 				181179F72086348600C408A1 /* YAAppsCommunicationModeUITests */,
+				1895EEEB2090CD7A00E24015 /* YAImageShare */,
 				181179D22086348600C408A1 /* Products */,
 				18B74BAA208732000023833B /* Frameworks */,
 			);
@@ -122,6 +159,7 @@
 				181179D12086348600C408A1 /* YAAppsCommunicationMode.app */,
 				181179E92086348600C408A1 /* YAAppsCommunicationModeTests.xctest */,
 				181179F42086348600C408A1 /* YAAppsCommunicationModeUITests.xctest */,
+				1895EEEA2090CD7900E24015 /* YAImageShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +229,17 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		1895EEEB2090CD7A00E24015 /* YAImageShare */ = {
+			isa = PBXGroup;
+			children = (
+				1895EEEC2090CD7A00E24015 /* ShareViewController.h */,
+				1895EEED2090CD7A00E24015 /* ShareViewController.m */,
+				1895EEEF2090CD7A00E24015 /* MainInterface.storyboard */,
+				1895EEF22090CD7A00E24015 /* Info.plist */,
+			);
+			path = YAImageShare;
+			sourceTree = "<group>";
+		};
 		18B74BAA208732000023833B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,10 +258,12 @@
 				181179CD2086348600C408A1 /* Sources */,
 				181179CE2086348600C408A1 /* Frameworks */,
 				181179CF2086348600C408A1 /* Resources */,
+				1895EEF92090CD7A00E24015 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1895EEF42090CD7A00E24015 /* PBXTargetDependency */,
 			);
 			name = YAAppsCommunicationMode;
 			productName = YAAppsCommunicationMode;
@@ -255,6 +306,23 @@
 			productReference = 181179F42086348600C408A1 /* YAAppsCommunicationModeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1895EEE92090CD7900E24015 /* YAImageShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1895EEF62090CD7A00E24015 /* Build configuration list for PBXNativeTarget "YAImageShare" */;
+			buildPhases = (
+				1895EEE62090CD7900E24015 /* Sources */,
+				1895EEE72090CD7900E24015 /* Frameworks */,
+				1895EEE82090CD7900E24015 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YAImageShare;
+			productName = YAImageShare;
+			productReference = 1895EEEA2090CD7900E24015 /* YAImageShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -268,6 +336,9 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
@@ -282,6 +353,10 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 181179D02086348600C408A1;
+					};
+					1895EEE92090CD7900E24015 = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -301,6 +376,7 @@
 				181179D02086348600C408A1 /* YAAppsCommunicationMode */,
 				181179E82086348600C408A1 /* YAAppsCommunicationModeTests */,
 				181179F32086348600C408A1 /* YAAppsCommunicationModeUITests */,
+				1895EEE92090CD7900E24015 /* YAImageShare */,
 			);
 		};
 /* End PBXProject section */
@@ -329,6 +405,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1895EEE82090CD7900E24015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1895EEF12090CD7A00E24015 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +451,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1895EEE62090CD7900E24015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1895EEEE2090CD7A00E24015 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -379,6 +471,11 @@
 			isa = PBXTargetDependency;
 			target = 181179D02086348600C408A1 /* YAAppsCommunicationMode */;
 			targetProxy = 181179F52086348600C408A1 /* PBXContainerItemProxy */;
+		};
+		1895EEF42090CD7A00E24015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1895EEE92090CD7900E24015 /* YAImageShare */;
+			targetProxy = 1895EEF32090CD7A00E24015 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -398,6 +495,14 @@
 				181179E02086348600C408A1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1895EEEF2090CD7A00E24015 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1895EEF02090CD7A00E24015 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -603,6 +708,40 @@
 			};
 			name = Release;
 		};
+		1895EEF72090CD7A00E24015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RSU7N269N5;
+				INFOPLIST_FILE = YAImageShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanjiying.YAAppsCommunicationMode.YAImageShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1895EEF82090CD7A00E24015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RSU7N269N5;
+				INFOPLIST_FILE = YAImageShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lanjiying.YAAppsCommunicationMode.YAImageShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -638,6 +777,15 @@
 			buildConfigurations = (
 				18117A042086348600C408A1 /* Debug */,
 				18117A052086348600C408A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1895EEF62090CD7A00E24015 /* Build configuration list for PBXNativeTarget "YAImageShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1895EEF72090CD7A00E24015 /* Debug */,
+				1895EEF82090CD7A00E24015 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
