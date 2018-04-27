@@ -49,7 +49,7 @@
 - (CommunicationAdapter *)adapter
 {
     if (!_adapter) {
-        _adapter = [[CommunicationAdapter alloc] initWithDataSource:@[@"URL Scheme",@"Keychain",@"UIPasteboard",@"UIActivityViewController/Air Drop",@"UIDocumentInteractionController/Quick Look",@"App Extension",@"Groups"]];
+        _adapter = [[CommunicationAdapter alloc] initWithDataSource:@[@"URL Scheme",@"Keychain",@"UIPasteboard",@"UIActivityViewController/Air Drop",@"UIDocumentInteractionController/Quick Look",@"App Extension",@"Groups",@"local socket"]];
     }
     return _adapter;
 }
@@ -91,34 +91,19 @@
 - (UIDocumentInteractionController *)documentInteractionController
 {
     if (!_documentInteractionController) {
-        _documentInteractionController = [UIDocumentInteractionController interactionControllerWithURL:[[NSBundle mainBundle]URLForResource:@"mine_wxpay@2x" withExtension:@"jpeg"]];
+#warning must save at the doucuments
+        NSURL* documentsUrl = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].firstObject;
+        NSURL* destinationUrl = [documentsUrl URLByAppendingPathComponent:@"wxpay.jpeg"];
+        
+        NSData *pathData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"mine_wxpay@2x" ofType:@"jpeg"]];
+        [pathData writeToURL:destinationUrl atomically:YES];
+        _documentInteractionController = [UIDocumentInteractionController interactionControllerWithURL:destinationUrl];
         _documentInteractionController.delegate = self;
-//        _documentInteractionController.URL
         _documentInteractionController.UTI = @"public.image";
     }
     return _documentInteractionController;
 }
-#pragma mark- DocumentDelegate
-- (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller
-{
-    return self;
-}
-- (UIView *)documentInteractionControllerViewForPreview:(UIDocumentInteractionController *)controller
-{
-    return self.view;
-}
-- (void)documentInteractionController:(UIDocumentInteractionController *)controller willBeginSendingToApplication:(nullable NSString *)application
-{
-    NSLog(@"%@ ----%@",application,controller.URL);
-}
-- (void)documentInteractionController:(UIDocumentInteractionController *)controller didEndSendingToApplication:(NSString *)application
-{
-    NSString *urlString = [NSString stringWithFormat:@"%@",controller.URL];
-    NSArray *componentArray = [urlString componentsSeparatedByString:@"/"];
-    NSString *finalString = [NSString stringWithFormat:@"file:///private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/%@",[componentArray lastObject]];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:finalString]];
-    
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
