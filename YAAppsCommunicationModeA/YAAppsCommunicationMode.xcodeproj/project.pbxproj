@@ -91,6 +91,7 @@
 		18117A0D2086422600C408A1 /* UITableView+adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+adapter.m"; sourceTree = "<group>"; };
 		18117A0F2086451A00C408A1 /* CommunicationAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommunicationAdapter.h; sourceTree = "<group>"; };
 		18117A102086451A00C408A1 /* CommunicationAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommunicationAdapter.m; sourceTree = "<group>"; };
+		1832AAD6209889AF00A64C9A /* YAImageShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YAImageShare.entitlements; sourceTree = "<group>"; };
 		183308FF20879180005AB55E /* YAKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAKeyChain.m; sourceTree = "<group>"; };
 		1833090020879180005AB55E /* YAKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAKeyChain.h; sourceTree = "<group>"; };
 		1833093020886001005AB55E /* YAAppsCommunicationMode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YAAppsCommunicationMode.entitlements; sourceTree = "<group>"; };
@@ -232,6 +233,7 @@
 		1895EEEB2090CD7A00E24015 /* YAImageShare */ = {
 			isa = PBXGroup;
 			children = (
+				1832AAD6209889AF00A64C9A /* YAImageShare.entitlements */,
 				1895EEEC2090CD7A00E24015 /* ShareViewController.h */,
 				1895EEED2090CD7A00E24015 /* ShareViewController.m */,
 				1895EEEF2090CD7A00E24015 /* MainInterface.storyboard */,
@@ -357,6 +359,11 @@
 					1895EEE92090CD7900E24015 = {
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -712,6 +719,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = YAImageShare/YAImageShare.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RSU7N269N5;
@@ -729,6 +737,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = YAImageShare/YAImageShare.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RSU7N269N5;
